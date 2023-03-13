@@ -16,7 +16,6 @@
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="/assets/css/custom.css">
   <link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.ico' />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
@@ -175,11 +174,10 @@
           </li>
         </ul>
       </nav>
-      <!-- Side Bar -->
       <x-sidebar/>
       <!-- Main Content -->
       <div class="main-content">
-            {{ $slot }}
+        {{ $slot }}
       </div>
       <footer class="main-footer">
         <div class="footer-left">
@@ -200,7 +198,6 @@
   <script src="/assets/js/scripts.js"></script>
   <!-- Custom JS File -->
   <script src="/assets/js/custom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 

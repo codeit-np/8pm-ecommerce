@@ -33,12 +33,14 @@
             </div>
         </div>
 
+       <div class="col-md-12">
         <div class="form-group">
             <label for="map">MAP</label>
             <textarea id="map" class="form-control" name="map" rows="3"></textarea>
         </div>
+       </div>
 
-        <div class="col-md-6">
+        <div class="col-md-12">
             <div class="form-group">
                 <label for="logo">Upload Image (Optional) <span class="text-danger">*</span></label>
                 <input id="logo" class="form-control-file" type="file" name="logo">
