@@ -25,18 +25,23 @@
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="description">Product Description (Optional)</label>
-            <textarea id="description" class="form-control" name="description" rows="3"></textarea>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="description">Product Description (Optional)</label>
+                <textarea id="description" class="form-control" name="description" rows="3"></textarea>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="category_id">Select Category</label>
-            <select id="category_id" class="form-control" name="category_id">
-                @foreach ($categories as $item)
-                    <option value="{{ $item->id }}">{{ $item->name }}</option>
-                @endforeach
-            </select>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="category_id">Select Category</label>
+                <select id="category_id" class="form-control" name="category_id">
+                    @foreach ($categories as $item)
+                        <option value="{{ $item->id }}">{{ $item->name }}</option>
+                    @endforeach
+                </select>
+            </div>
+
         </div>
 
         <div class="col-md-6">
@@ -45,8 +50,10 @@
                 <input id="image" class="form-control-file" type="file" name="image">
             </div>
         </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-success btn-sm">Save Record</button>
+        </div>
 
-        <button type="submit" class="btn btn-success">Save Record</button>
        </div>
     </form>
 </x-app-layout>
